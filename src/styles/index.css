@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
 
 @theme{
   /* font family*/
@@ -11,7 +12,7 @@
   --color-text-main: #191A23;
   --color-bg-cardlight: #f3f3f3;
   --color-bg-cardDark:#191a23;
-  --color-border: #191a23;
+  --color-border-color: #191a23;
 
   /* font size  desktop */
   --text-md-desk: 18px;
@@ -34,10 +35,11 @@
   --spacing-xl: 70px;
   --spacing-gap-lg: 40px;
   --spacing-gap-md:30px;
+  --spacing-max-width: 1440px;
+  --spacing-head-length: 15ch;
+  --spacing-text-length: 39ch;
 
   /* border radius */
-
-  
   --radius-button:14px;
   --radius-card: 45px;
   /* drop shadow */
@@ -45,11 +47,7 @@
   --drop-shadow-card: 0px 5px 0px #191a23;
 
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 :root {
   /* letter-spacing: 0.18px; */
@@ -58,6 +56,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +68,7 @@
   --color-text-main: #f3f3f3;
   --color-bg-cardlight: #1f2025;
   --color-bg-cardDark:#1f2025;
+   --color-border-color: #f3f3f3;
   }
 
 
@@ -77,7 +79,8 @@
   --color-bg: #191a23;
   --color-text-main: #f3f3f3;
   --color-bg-cardlight: #1f2025;
-  --color-bg-cardDark:#1f2025;  
+  --color-bg-cardDark:#1f2025;
+   --color-border-color: #f3f3f3;
 }
 [data-theme="light"]{
   --color-primary: #B9FF66;
@@ -85,13 +88,17 @@
   --color-text-main: #191A23;
   --color-bg-cardlight: #f3f3f3;
   --color-bg-cardDark:#191a23;
+   --color-border-color: #191a23;
 }
 img {
   max-width: 100%;
   display: block;
 }
 body {
-  font-family: var(--font-sans);
+  /* @apply font-sans; */
+  color: var(--color-text-main
+  );
+  background-color: var(--color-bg);
 }
 
 

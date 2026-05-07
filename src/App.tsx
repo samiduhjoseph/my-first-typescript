@@ -1,8 +1,14 @@
 import { useState } from 'react'
-
-import './App.css'
+import Layout from './components/layout/Layout'
+import Home from './pages/Home'
+import "./styles/index.css"
 
 function App() {
+    return(
+        <Layout>
+            <Home />
+        </Layout>
+    )
  
 }
 
