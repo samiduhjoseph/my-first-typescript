@@ -10,6 +10,7 @@
   --color-primary: #B9FF66;
   --color-bg: #ffffff;
   --color-text-main: #191A23;
+  --color-text-light:#f3f3f3;
   --color-bg-cardlight: #f3f3f3;
   --color-bg-cardDark:#191a23;
   --color-border-color: #191a23;
@@ -29,7 +30,8 @@
   --text-3xl-mob: 43px;
 
   /* spacing */
-  --spacing-4xl: 180px;
+  --spacing-5xl: 180px;
+  --spacing-4xl: 140px;
   --spacing-3xl: 100px;
   --spacing-2xl: 80px;
   --spacing-xl: 70px;
@@ -44,7 +46,7 @@
   --radius-card: 45px;
   /* drop shadow */
 
-  --drop-shadow-card: 0px 5px 0px #191a23;
+  --drop-shadow-card:0_5px_0_rgba(25,26,35,1);
 
 }
 
